@@ -42,11 +42,10 @@ public class GroupTest {
         //get the save one by findByName
         Group found = repository.findByName("Vaasa JUG");
         
-        assertNotNull(found);
-        if(found != null){
+        
             assertEquals(found.getName(),item.getName());
             repository.delete(found); //we don't want to keep this data
-        }
+        
        
         
         //compare the initial and the saved one if the name is the same
